@@ -29,8 +29,8 @@ const Header = () => {
         <div className="ml-2 flex items-center rounded-full bg-gray-100 p-2">
           <SearchIcon className="h-6 text-gray-600" />
           <input
-            className="ml-2 flex flex-shrink items-center bg-transparent placeholder-gray-500
-            outline-none"
+            className="ml-2 hidden flex-shrink items-center bg-transparent
+            placeholder-gray-500 outline-none md:inline-flex"
             type="text"
             placeholder="Search Facebook"
           />
@@ -48,6 +48,10 @@ const Header = () => {
         </div>
       </div>
       {/* Right */}
+      <div>
+        {/* Profile pic */}
+        <p className="whitespace-nowrap pr-3 font-semibold">minori</p>
+      </div>
     </div>
   )
 }
