@@ -17,7 +17,7 @@ import HeaderIcon from './HeaderIcon'
 
 const Header = () => {
   return (
-    <div>
+    <div className="sticky top-0 z-50 flex items-center bg-white p-2 shadow-md lg:px-5">
       {/* Left */}
       <div className="flex items-center">
         <Image
@@ -29,7 +29,8 @@ const Header = () => {
         <div className="ml-2 flex items-center rounded-full bg-gray-100 p-2">
           <SearchIcon className="h-6 text-gray-600" />
           <input
-            className="ml-2 flex items-center bg-transparent placeholder-gray-500 outline-none"
+            className="ml-2 flex flex-shrink items-center bg-transparent placeholder-gray-500
+            outline-none"
             type="text"
             placeholder="Search Facebook"
           />
@@ -38,8 +39,12 @@ const Header = () => {
 
       {/* Center */}
       <div className="flex flex-grow justify-center">
-        <div>
-          <HeaderIcon Icon={HomeIcon} />
+        <div className="flex space-x-6 md:space-x-2">
+          <HeaderIcon Icon={HomeIcon} active />
+          <HeaderIcon Icon={FlagIcon} />
+          <HeaderIcon Icon={PlayIcon} />
+          <HeaderIcon Icon={ShoppingCartIcon} />
+          <HeaderIcon Icon={UserGroupIcon} />
         </div>
       </div>
       {/* Right */}
