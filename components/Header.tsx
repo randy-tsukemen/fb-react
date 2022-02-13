@@ -48,9 +48,13 @@ const Header = () => {
         </div>
       </div>
       {/* Right */}
-      <div>
+      <div className="flex items-center justify-end sm:space-x-2">
         {/* Profile pic */}
         <p className="whitespace-nowrap pr-3 font-semibold">minori</p>
+        <ViewGridIcon className="icon" />
+        <ChatIcon className="icon" />
+        <BellIcon className="icon" />
+        <ChevronDownIcon className="icon" />
       </div>
     </div>
   )
