@@ -32,8 +32,8 @@ export default NextAuth({
     //   domain: process.env.AUTH0_DOMAIN,
     // }),
     FacebookProvider({
-      clientId: process.env.FACEBOOK_ID,
-      clientSecret: process.env.FACEBOOK_SECRET,
+      clientId: process.env.FACEBOOK_ID || '',
+      clientSecret: process.env.FACEBOOK_SECRET || '',
     }),
     // GithubProvider({
     //   clientId: process.env.GITHUB_ID,
